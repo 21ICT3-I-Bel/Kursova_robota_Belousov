@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Що таке ШІ | Атлас ШІ</title>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/basics.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">До основного вмісту</a>
+<header><div class="wrap bar"><a class="brand" href="index.html">Атлас ШІ</a>
+  <button type="button" id="menu-button" aria-controls="navigation" aria-expanded="false" hidden>Меню</button>
+  <nav id="navigation" aria-label="Основна навігація"><a href="index.html">Головна</a>
+<a href="basics.html" aria-current="page">Основи</a>
+<a href="methods.html">Технології</a>
+<a href="cases.html">Застосування</a>
+<a href="tools.html">Інструменти</a>
+<a href="risks.html">Ризики</a>
+<a href="future.html">Майбутнє</a>
+<a href="about.html">Джерела</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main" tabindex="-1"><p class="crumb"><a href="index.html">Головна</a></p>
+<h1>Що таке ШІ</h1>
+<p class="lead">Два етапи роботи поштового фільтра: навчання на розмічених листах і рішення щодо нової пошти.</p>
+<div class="read"><h2>Чого навчається фільтр</h2>
+<p>Для навчання потрібен набір листів, у якому вже позначено спам. Модель знаходить ознаки, пов’язані з мітками. На окремій добірці можна перевірити, як часто вона пропускає небажану пошту або затримує звичайні повідомлення.</p>
+<h2>Від оцінки до рішення</h2>
+<p>Коли надходить новий лист, навчена модель обчислює оцінку. Розробник задає поріг, за яким фільтр вирішує, які листи позначити. Наприклад, за порогу 0,70 лише третій із наведених нижче листів потрапить до спаму.</p>
+<section id="experiment"><h2>Що змінить поріг?</h2>
+<figure class="mail"><figcaption>Три листи у скриньці</figcaption><ol><li><div class="message-label"><span>Лист 1</span><strong>Розклад на п’ятницю</strong></div>
+<div class="score"><strong>0,18</strong><span class="track" aria-hidden="true"><span class="fill" style="--value:18%"></span></span></div>
+</li><li><div class="message-label"><span>Лист 2</span><strong>Знижка в книгарні</strong></div>
+<div class="score"><strong>0,61</strong><span class="track" aria-hidden="true"><span class="fill" style="--value:61%"></span></span></div>
+</li><li><div class="message-label"><span>Лист 3</span><strong>Ви виграли приз!</strong></div>
+<div class="score"><strong>0,83</strong><span class="track" aria-hidden="true"><span class="fill" style="--value:83%"></span></span></div>
+</li></ol><small>Оцінки умовні. Що вище число, то більше лист схожий на спам.</small></figure>
+<p>Числа в цьому прикладі задані наперед. Лист потрапляє до спаму, якщо його оцінка дорівнює порогу або перевищує його.</p>
+<div class="demo" hidden><label for="threshold">Поріг фільтра</label><input type="range" id="threshold" min="0" max="100" step="1" value="70"><output id="decision" for="threshold"></output></div>
+</section>
+<section class="walkthrough"><h2>Поріг у трьох кроках</h2><video controls playsinline preload="none" poster="images/threshold.jpg" width="960" height="720"><source src="video/threshold.mp4" type="video/mp4">Ваш браузер не підтримує відео.</video><p>Відео без звуку. За порогу 0,70 позначено третій лист. При зниженні до 0,61 до нього додається другий, а за 0,62 у спамі знову залишається лише третій.</p></section><h2>Як тлумачити результат</h2>
+<p>За нижчого порогу фільтр позначить більше листів. Щоб з’ясувати, чи це поліпшення, потрібні справжні мітки: який лист був небажаним, а який читач хотів отримати. За самими оцінками цього визначити неможливо.</p>
+<p>Про навчання і перевірку моделей: <a href="https://www.deeplearningbook.org/">Goodfellow, Bengio, Courville, розділ 5</a>.</p>
+</div>
+<section class="endlinks"><h2>Читати далі</h2>
+<ul><li><a href="methods.html">Технології</a></li><li><a href="risks.html">Переваги та ризики</a></li></ul>
+</section>
+</main>
+<footer><div class="wrap"><span>Ігор Білоусов · 2026<br><small>Розробка вебсайту, присвяченого технології штучного інтелекту</small></span><a href="about.html">Про видання та джерела</a></div>
+</footer>
+</body>
+</html>

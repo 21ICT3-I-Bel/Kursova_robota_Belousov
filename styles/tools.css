@@ -1,0 +1,3 @@
+.photo-note {margin:1.5rem 0; padding:0; background:transparent;}
+.photo-note img {display:block; width:100%; max-width:32rem; height:auto;}
+.photo-note figcaption {font:inherit; max-width:55ch; margin-top:.45rem;}

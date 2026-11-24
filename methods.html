@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Технології | Атлас ШІ</title>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/methods.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">До основного вмісту</a>
+<header><div class="wrap bar"><a class="brand" href="index.html">Атлас ШІ</a>
+  <button type="button" id="menu-button" aria-controls="navigation" aria-expanded="false" hidden>Меню</button>
+  <nav id="navigation" aria-label="Основна навігація"><a href="index.html">Головна</a>
+<a href="basics.html">Основи</a>
+<a href="methods.html" aria-current="page">Технології</a>
+<a href="cases.html">Застосування</a>
+<a href="tools.html">Інструменти</a>
+<a href="risks.html">Ризики</a>
+<a href="future.html">Майбутнє</a>
+<a href="about.html">Джерела</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main" tabindex="-1"><p class="crumb"><a href="index.html">Головна</a></p>
+<h1>Технології</h1>
+<p class="lead">Зір, мовні моделі й пошук. Як вибір методу залежить від завдання.</p>
+<div class="read"><h2>Навчання за прикладами</h2>
+<p>За наявності міток можна навчити класифікатор визначати клас об’єкта. Для прогнозу числової величини, наприклад попиту, використовують регресію. За відсутності міток кластеризація допомагає знайти групи схожих спостережень.</p>
+<h2>Зображення та мова</h2>
+<p>Камера на конвеєрі передає зображення. Завдання може полягати у визначенні типу деталі, пошуку подряпини чи виділенні її межі. Кожен із цих результатів має іншу форму.</p>
+<p>Мовна модель працює з послідовностями токенів. Під час створення тексту авторегресійна модель крок за кроком продовжує послідовність. Граматично правильне речення іноді містить помилковий факт.</p>
+<h2>Коли потрібен пошук</h2>
+<p>Маршрут між пунктами можна шукати в графі доріг із заданими витратами переходу. Це приклад задачі ШІ, для якої існують алгоритми без навчання на прикладах.</p>
+<p>Докладніше: <a href="https://aima.cs.berkeley.edu/global-index.html">Russell та Norvig</a> і <a href="https://web.stanford.edu/~jurafsky/slp3/">підручник з обробки мови</a>.</p>
+</div>
+<section class="gallery" aria-labelledby="gallery-title"><h2 id="gallery-title">Що шукати на фотографії?</h2>
+<p>Для кожного кадру наведено окреме завдання комп’ютерного зору. Натисніть на знімок, щоб відкрити оригінал і роздивитися деталі.</p><div class="photo-grid"><figure><a href="images/flower.jpg" aria-label="Відкрити фото: Квітка крупним планом"><img src="images/flower.jpg" alt="Квітка крупним планом" loading="lazy"></a><figcaption><h3>Класифікація</h3><p>До якого класу належить об’єкт у центрі кадру? Для відповіді достатньо однієї назви.</p><small>Фото: <a href="https://www.flickr.com/photos/vultilion/6056698931/">vultilion · Flickr</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small></figcaption></figure>
+<figure><a href="images/hopper.jpg" aria-label="Відкрити фото: Портрет Ґрейс Гоппер у формі"><img src="images/hopper.jpg" alt="Портрет Ґрейс Гоппер у формі" loading="lazy"></a><figcaption><h3>Локалізація</h3><p>Де в кадрі обличчя? Очікуваний результат — координати рамки. Ім’я людини для цієї задачі зайве.</p><small>Фото: <a href="https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg">U.S. Navy · суспільне надбання</a></small></figcaption></figure>
+<figure><a href="images/garden.jpg" aria-label="Відкрити фото: Архітектурні споруди біля води в саду"><img src="images/garden.jpg" alt="Архітектурні споруди біля води в саду" loading="lazy"></a><figcaption><h3>Сегментація</h3><p>Які пікселі на знімку належать воді? Потрібна маска ділянки, тож однієї назви класу замало.</p><small>Фото: <a href="https://www.flickr.com/photos/danielbuechele/6061409035/">danielbuechele · Flickr</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></small></figcaption></figure>
+</div></section>
+<section class="endlinks"><h2>Читати далі</h2>
+<ul><li><a href="cases.html">Застосування</a></li><li><a href="tools.html">ШІ-інструменти</a></li></ul>
+</section>
+</main>
+<footer><div class="wrap"><span>Ігор Білоусов · 2026<br><small>Розробка вебсайту, присвяченого технології штучного інтелекту</small></span><a href="about.html">Про видання та джерела</a></div>
+</footer>
+</body>
+</html>

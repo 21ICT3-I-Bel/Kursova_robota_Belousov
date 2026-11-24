@@ -1,0 +1,7 @@
+.gallery { margin-block: 2rem; }
+.gallery > p {max-width: 69ch}
+.photo-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap:1.3rem; }
+.photo-grid figure { background:transparent; padding:0; }
+.photo-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+.photo-grid figcaption { font:inherit; padding-top:.8rem; }
+.photo-grid figcaption p { margin:.4rem 0; }
